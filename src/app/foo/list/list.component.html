@@ -1,0 +1,22 @@
+<div class="container mt-4">
+    <table class="table table-dark text-center">
+        <thead class="thead-dark">
+          <tr>
+            <th scope="col">ID</th>
+            <th scope="col">Name</th>
+            <th scope="col">View</th>
+            <th *ngIf="isAdmin" scope="col">Edit</th>
+            <th *ngIf="isAdmin" scope="col">Delete</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr *ngFor="let foo of foos">
+            <th scope="row">{{foo.id}}</th>
+            <td>{{foo.name}}</td>
+            <td><button class="btn btn-outline-primary"><i class="far fa-eye" routerLink="/detail/{{foo.id}}"></i> View</button></td>
+            <td *ngIf="isAdmin"><button class="btn btn-outline-warning" routerLink="/update/{{foo.id}}"><i class="far fa-edit"></i> Edit</button></td>
+            <td *ngIf="isAdmin"><button class="btn btn-outline-danger" (click)="onDelete(foo.id)"><i class="far fa-trash-alt"></i> Delete</button></td>
+          </tr>
+        </tbody>
+    </table>      
+</div>

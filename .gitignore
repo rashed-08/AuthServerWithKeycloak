@@ -6,6 +6,11 @@
 /out-tsc
 # Only exists if Bazel was run
 /bazel-out
+e2e
+.browserslistrc
+.editorconfig
+.gitignore
+*-lock.*
 
 # dependencies
 /node_modules
@@ -17,6 +22,7 @@ speed-measure-plugin*.json
 # IDEs and editors
 /.idea
 .project
+.git
 .classpath
 .c9/
 *.launch

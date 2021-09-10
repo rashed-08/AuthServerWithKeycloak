@@ -1,0 +1,25 @@
+<div class="container">
+    <div class="row" *ngIf="foo">
+        <div class="col-md-6 mx-auto">
+            <div class="card">
+                <div class="card-header text-center">
+                    Details
+                </div>
+                <div class="card-body">
+                    <ul class="list-group group-flush">
+                        <li class="list-group-item">
+                            <b>ID: </b> {{foo.id}}
+                            
+                        </li>
+                        <li class="list-group-item">
+                            <b>Name: </b> {{foo.name}}
+                        </li>
+                    </ul>
+                </div>
+                <div class="card-footer">
+                    <button class="btn btn-outline-primary" (click)="gotoList()"><i class="far fa-arrow-alt-circle-left"></i> List</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
