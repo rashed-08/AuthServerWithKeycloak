@@ -23,6 +23,7 @@ speed-measure-plugin*.json
 /.idea
 .project
 .git
+.mvn
 .classpath
 .c9/
 *.launch
